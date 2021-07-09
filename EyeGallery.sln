@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyeGallery", "EyeGallery\EyeGallery.csproj", "{20FBCBA6-001F-4297-B670-13CBF7A3654E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20FBCBA6-001F-4297-B670-13CBF7A3654E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20FBCBA6-001F-4297-B670-13CBF7A3654E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20FBCBA6-001F-4297-B670-13CBF7A3654E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20FBCBA6-001F-4297-B670-13CBF7A3654E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4675F140-24A5-4CD0-820A-B737AEC011E3}
+	EndGlobalSection
+EndGlobal
