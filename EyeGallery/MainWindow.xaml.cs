@@ -20,9 +20,56 @@ namespace EyeGallery
     /// </summary>
     public partial class MainWindow : Window
     {
+        Image Image;
+        public List<Image> Images { get; set; }
         public MainWindow()
         {
+            Images = new List<Image> {
+            new Image
+                {
+                ImagePath="Images/1monaLisa.jpg"
+                },
+            new Image
+                {
+                ImagePath="Images/2theLastSupper.jpg"
+
+                },
+            new Image
+                {
+                ImagePath="Images/3theStarryNight.jpg"
+
+                },
+            new Image
+                {
+
+                },
+            new Image
+                {
+
+                },
+            new Image
+                {
+
+                },
+            new Image
+                {
+
+                },
+            new Image
+                {
+
+                },
+            new Image
+                {
+
+                },
+            new Image
+                {
+
+                }
+            };
             InitializeComponent();
+            DataContext = this;
         }
     }
 }

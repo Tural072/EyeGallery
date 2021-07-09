@@ -6,7 +6,46 @@
         xmlns:local="clr-namespace:EyeGallery"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="{StaticResource SpecialGradient}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="File">
+                <MenuItem Header="Open"></MenuItem>
+                <MenuItem Header="New"></MenuItem>
+                <MenuItem Header="Save"></MenuItem>
+                <MenuItem Header="Save as"></MenuItem>
+                <MenuItem Header="Exit"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Add file"></MenuItem>
+                <MenuItem Header="Add folder"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="View">
+                <MenuItem Header="Tails"></MenuItem>
+                <MenuItem Header="Small icons"></MenuItem>
+                <MenuItem Header="Details"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="About"></MenuItem>
+        </Menu>
+
+        <ListBox x:Name="mainListbox"
+                     Grid.Row="1"
+                 Background="Transparent">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel ScrollViewer.VerticalScrollBarVisibility="Visible"></WrapPanel>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Image Width="150" Height="150" Margin="10" Source="{Binding ImagePath}"></Image>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>

@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:EyeGallery">
+
+    <LinearGradientBrush x:Key="SpecialGradient" >
+        <GradientStop Color="#000000" Offset="0.0" ></GradientStop>
+        <GradientStop Color="#434343" Offset="0.5" ></GradientStop>
+    </LinearGradientBrush>
+</ResourceDictionary>
