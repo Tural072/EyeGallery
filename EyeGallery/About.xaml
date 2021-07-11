@@ -1,0 +1,32 @@
+﻿<Window x:Class="EyeGallery.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EyeGallery"
+        mc:Ignorable="d"
+        Title="About Eye Gallery" 
+        Height="150" 
+        Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        >
+    <Grid Background="{StaticResource SpecialGradient}">
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="Eye Gallery" 
+                       Foreground="{StaticResource RedGradientBrush}"
+                       FontSize="28"></TextBlock>
+            <TextBlock Text="Version 0.1"
+                       Foreground="White"></TextBlock>
+            <TextBlock Text="© 2021 TT Corparations."
+                       Foreground="White"></TextBlock>
+            <TextBlock Text="All rights reserved."
+                       Foreground="White"></TextBlock>
+            <Button Content="OK" Width="70" 
+                    HorizontalAlignment="Right" 
+                    VerticalAlignment="Bottom"
+                    Margin="0,0,10,0"
+                    Click="Button_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

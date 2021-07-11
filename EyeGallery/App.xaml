@@ -7,6 +7,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Gradient.xaml" ></ResourceDictionary>
+                <ResourceDictionary Source="ButtonStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Size.xaml"></ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

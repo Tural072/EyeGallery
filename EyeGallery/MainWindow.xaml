@@ -5,7 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EyeGallery"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Eye Gallery" 
+        Height="450" 
+        Width="800"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen"
+        Icon="Images/galleryIcon.ico">
     <Grid Background="{StaticResource SpecialGradient}">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -17,32 +22,43 @@
                 <MenuItem Header="New"></MenuItem>
                 <MenuItem Header="Save"></MenuItem>
                 <MenuItem Header="Save as"></MenuItem>
-                <MenuItem Header="Exit"></MenuItem>
+                <MenuItem Header="Exit"
+                          Click="MenuItem_Click"></MenuItem>
             </MenuItem>
             <MenuItem Header="Edit">
                 <MenuItem Header="Add file"></MenuItem>
                 <MenuItem Header="Add folder"></MenuItem>
             </MenuItem>
             <MenuItem Header="View">
-                <MenuItem Header="Tails"></MenuItem>
-                <MenuItem Header="Small icons"></MenuItem>
-                <MenuItem Header="Details"></MenuItem>
+                <MenuItem Name="smallIcons"
+                    Header="Small icons"
+                          Click="smallIcons_Click"></MenuItem>
+                <MenuItem Name="mediumIcons" 
+                    Header="Medium icons"
+                          Click="mediumIcons_Click"></MenuItem>
+                <MenuItem Name="largeIcons"
+                    Header="Large icons"
+                          Click="largeIcons_Click"></MenuItem>
             </MenuItem>
-            <MenuItem Header="About"></MenuItem>
+            <MenuItem Name="About"
+                Header="About"
+                      Click="About_Click"></MenuItem>
         </Menu>
-
         <ListBox x:Name="mainListbox"
-                     Grid.Row="1"
-                 Background="Transparent">
+                 ItemsSource="{Binding Images}" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                 Grid.Row="1"
+                 Background="Transparent"
+                 MouseDoubleClick="mainListbox_MouseDoubleClick">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <WrapPanel ScrollViewer.VerticalScrollBarVisibility="Visible"></WrapPanel>
+                    <WrapPanel ></WrapPanel>
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <Image Width="150" Height="150" Margin="10" Source="{Binding ImagePath}"></Image>
+                        <Image Width="{DynamicResource Size}" Height="{DynamicResource Size}" Margin="10" Source="{Binding ImagePath}"></Image>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
