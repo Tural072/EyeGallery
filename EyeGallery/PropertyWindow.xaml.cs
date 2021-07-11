@@ -35,7 +35,7 @@ namespace EyeGallery
             timer.Start();
             try
             {
-                timer.Interval = new TimeSpan(0, 0, 0, 4);
+                timer.Interval = new TimeSpan(0, 0, 0, 3);
                 mainImage.Source = new BitmapImage(new Uri(ImageCopy[index].ImagePath, UriKind.RelativeOrAbsolute));
                 nameTxtBlk.Text = ImageCopy[index].Name +" "+ ImageCopy[index].Author;
                 priceTxtb.Text = ImageCopy[index].Price;
