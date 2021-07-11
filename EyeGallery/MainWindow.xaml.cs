@@ -30,7 +30,7 @@ namespace EyeGallery
                 Name="Mona Lisa",
                 ImagePath="Images/monaLisa.jpg",
                 Author="Leonardo Da Vinci",
-                Date="1503 - 1506's",
+                Date="1506's",
                 Price="Price : \n$860 million",
                 Description="Inarguably the most famous painting to have ever been created in the Western World, the Mona Lisa was painted by Leonardo da Vinci between 1503 and 1506. He finished working on it in 1519. The painting is displayed in Louvre museum of Paris. It is believed to be a portrait of Lisa Gherardini, an Italian noblewoman."
                 },
